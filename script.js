@@ -53,9 +53,9 @@ class Level{
     }
 }
 
-Characters = {}
-
 PlayerLevel = new Level();
+
+Characters = {}
 
 Characters.Strength = new Char({
     name: 'Сила',
