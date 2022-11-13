@@ -1,0 +1,44 @@
+* {
+    font-family: 'Fira Mono', monospace;
+    font-size: large;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: rgb(0, 255, 0) 1px 0 1px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+body{
+    display: table;
+    width: 370px;
+    background-color: black;
+}
+
+container{
+    margin-top: 10px;
+    display: table-row;
+}
+
+container>icon{
+    float: left;
+}
+
+
+container>a{
+    width:auto;
+    text-align: right;
+}
+
+container>av,container>button{
+    float: right;    
+}
+
+container:active{
+    text-shadow: rgb(0, 0, 0) 1px 0 1px;
+    background-color: rgb(0, 255, 0);
+}
+
+container:active>icon,container:active>a,container:active>av,container:active>button{
+    text-shadow: rgb(0, 0, 0) 1px 0 1px;
+}
+
+
