@@ -26,7 +26,7 @@ class Char {
         this.containerEl.appendChild(this.valueEl);
 
         document.body.appendChild(this.containerEl);
-        this.valueEl.innerHTML = this.value + '⠀';
+        this.valueEl.innerHTML = '['+this.value + ']⠀';
     }
     ChangeValue(b) {
         if(this.value<= 1 && b<=0){}else if (this.value>= 10 && b>=0){}
@@ -36,7 +36,7 @@ class Char {
             if(b<=0)Sound.src = 'decrease.mp3';
             Sound.play();
         this.value += b;
-        this.valueEl.innerHTML = this.value + '⠀';
+        this.valueEl.innerHTML = '['+this.value + ']⠀';
         PlayerLevel.ChangeLevel(b);
         }
     }
@@ -52,7 +52,7 @@ class Level{
     }
     ChangeLevel(a){
         this.value+=a;
-        this.m.innerHTML="Уровень: "+this.value;
+        this.m.innerHTML="Уровень: ["+this.value + ']';
     }
 }
 
