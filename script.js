@@ -29,9 +29,12 @@ class Char {
         this.valueEl.innerHTML = this.value + '⠀';
     }
     ChangeValue(b) {
-        if(this.value<= 1 && b<=0){}
-        else if (this.value>= 10 && b>=0){}
+        if(this.value<= 1 && b<=0){}else if (this.value>= 10 && b>=0){}
         else{
+            Sound.pause();
+            if(b>=1)Sound.src = 'increase.mp3';
+            if(b<=0)Sound.src = 'decrease.mp3';
+            Sound.play();
         this.value += b;
         this.valueEl.innerHTML = this.value + '⠀';
         PlayerLevel.ChangeLevel(b);
@@ -53,9 +56,11 @@ class Level{
     }
 }
 
-PlayerLevel = new Level();
+Sound = new Audio();
 
-Characters = {}
+var PlayerLevel = new Level();
+
+Characters = {};
 
 Characters.Strength = new Char({
     name: 'Сила',
