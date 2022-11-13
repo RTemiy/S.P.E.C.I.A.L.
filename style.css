@@ -20,6 +20,14 @@ body {
     background-color: black;
 }
 
+icon{
+    display: block;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
 container {
     margin-top: 10px;
     display: table-row;
