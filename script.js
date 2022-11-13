@@ -64,7 +64,7 @@ Characters = {};
 
 Characters.Strength = new Char({
     name: 'Сила',
-    icon: '💪',
+    icon: '🏋️',
 });
 
 Characters.Perception = new Char({
@@ -79,12 +79,12 @@ Characters.Endurance = new Char({
 
 Characters.Charisma = new Char({
     name: 'Харизма',
-    icon: '🙇‍♂️',
+    icon: '🗣',
 });
 
 Characters.Intelligence = new Char({
     name: 'Интеллект',
-    icon: '🧠',
+    icon: '👨‍🎓',
 });
 
 Characters.Agility = new Char({
