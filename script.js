@@ -2,7 +2,7 @@ class Char {
     constructor(a) {
         this.name = a.name;
         this.icon = a.icon;
-        this.value = 0;
+        this.value = 1;
         this.Build();
     }
     Build() {
@@ -29,7 +29,7 @@ class Char {
         this.valueEl.innerHTML = this.value + '⠀';
     }
     ChangeValue(b) {
-        if(this.value<= 0 && b<=0){}
+        if(this.value<= 1 && b<=0){}
         else if (this.value>= 10 && b>=0){}
         else{
         this.value += b;
